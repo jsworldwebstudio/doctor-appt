@@ -122,7 +122,7 @@ function BookAppointment({doctorId}) {
         return
       }
       
-      // sendEmail();
+      sendEmail();
       toast("Booking Confirmation sent on Email");
 
     } catch (error) {

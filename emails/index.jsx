@@ -22,7 +22,7 @@ export const EmailTemplate = ({
   <Html>
     <Head />
     <Preview>
-      The sales intelligence platform that helps you uncover qualified leads.
+      Confirmation of your Doctor Appointment Booking.
     </Preview>
     <Body style={main}>
       <Container style={container}>
@@ -35,18 +35,18 @@ export const EmailTemplate = ({
         />
         <Text style={paragraph}>Hi {userFirstname},</Text>
         <Text style={paragraph}>
-          Welcome to Koala, the sales intelligence platform that helps you
-          uncover qualified leads and close deals faster.
+          Thank You for confirming your appointment.
+          This email confirms your booked appointment.
         </Text>
         <Section style={btnContainer}>
-          <Button style={button} href="https://getkoala.com">
-            Get started
+          <Button style={button} href="https://doctor-appt.vercel.app/">
+            To book additional appointments, click here
           </Button>
         </Section>
         <Text style={paragraph}>
           Best,
           <br />
-          The Koala team
+          support@jsworldwebstudio.com
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
