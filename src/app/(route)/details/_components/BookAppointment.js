@@ -69,14 +69,13 @@ function BookAppointment({doctorId}) {
     const options = {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization':`Bearer ${API_KEY}`,
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
     };
 
     try {
-      const response = await fetch('https://doctor-appt-strapi.onrender.com/api/sendEmail', options);
+      const response = await fetch('https://doctor-appt.vercel.app/api/sendEmail', options);
       const data = await response.json();
 
       if (!response.ok) {
