@@ -133,7 +133,7 @@ function BookAppointment({doctorId}) {
     return day<=new Date();
   }
   return (
-    <Dialog className="grid grid-cols-1 md:grid-cols-2">
+    <Dialog className="grid grid-cols-1 mt-5 mb-5 md:grid-cols-2">
       <DialogTrigger>
         <Button className="mt-3 rounded-full">Book Appointment</Button>
       </DialogTrigger>
